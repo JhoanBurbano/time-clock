@@ -1,0 +1,36 @@
+.analog-clock {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: relative;
+  background-color: #f2f0f6;
+  box-shadow: inset 8px 8px 17px 0 rgba(0, 0, 0, 0.05), inset -13px -13px 12px 0 hsla(0, 0%, 100%, 0.65), -11px -11px 40px 3px #fff, 8px 14px 40px -20px rgba(0, 0, 0, 0.19);
+}
+
+.hand {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: 50% 100%;
+}
+
+.hour-hand {
+  height: 50px;
+  width: 4px;
+  background-color: #333;
+  transform: translateX(-50%) translateY(-100%) rotate(0deg); /* Ajuste para centrar la manecilla de las horas */
+}
+
+.minute-hand {
+  height: 80px;
+  width: 2px;
+  background-color: #333;
+  transform: translateX(-50%) translateY(-100%) rotate(0deg); /* Ajuste para centrar la manecilla de los minutos */
+}
+
+.second-hand {
+  height: 90px;
+  width: 1px;
+  background-color: red; /* Color de la manecilla de los segundos */
+  transform: translateY(-100%) rotate(0deg); /* Ajuste para centrar la manecilla de los segundos */
+}
